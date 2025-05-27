@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Church of God</title>
   <meta charset="UTF-8">
+  <title>Church of God</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -27,11 +27,9 @@
 <!-- Sticky Header with Logo and Menu -->
 <div class="main-header">
   <div class="w3-bar w3-card" id="myNavbar">
-    <!-- Logo Left -->
     <a href="#home" class="w3-bar-item w3-button logo-container">
       <img src="ConferenceLogoPackage (3)/English/Conference Logo_White.png" alt="Church of God Logo">
     </a>
-    <!-- Menu Right -->
     <div class="menu-container">
       <a href="#about" class="w3-bar-item w3-button w3-text-white">About Us <i class="fa fa-caret-down"></i></a>
       <a href="#news" class="w3-bar-item w3-button w3-text-white">News</a>
@@ -41,7 +39,6 @@
       <a href="#give" class="w3-bar-item w3-button w3-text-white">Give</a>
       <a href="#contact" class="w3-bar-item w3-button w3-white w3-round">CONTACT</a>
     </div>
-    <!-- Mobile icon -->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-text-white" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
@@ -60,9 +57,77 @@
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
-<!-- Hero Section (empty for now) -->
+<!-- Hero Section -->
 <header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle w3-center">
+    <h1>Welcome to Church of God</h1>
+  </div>
 </header>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-wrapper">
+    <div class="footer-container">
+
+      <!-- Column 1: Logo + News -->
+      <div class="footer-column">
+        <img src="ConferenceLogoPackage (3)/English/Conference Logo_White.png" alt="Church of God Logo" class="footer-logo">
+        <h3>News & Updates</h3>
+        <a href="#">Home</a>
+        <a href="#">Churchright</a>
+        <a href="#">District News</a>
+        <a href="#">Events</a>
+        <a href="#">Memorials</a>
+      </div>
+
+      <!-- Column 2: Resources -->
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <a href="#">Contact</a>
+        <a href="#">FAQs</a>
+        <a href="#">Give</a>
+        <a href="#">Ministries</a>
+        <a href="#">Member Resources</a>
+      </div>
+
+      <!-- Column 3: Online Store -->
+      <div class="footer-column">
+        <h3>Online Store</h3>
+        <a href="#">Shop</a>
+        <a href="#">Books</a>
+        <a href="#">Branded Material</a>
+        <a href="#">Quarterlies</a>
+        <a href="#">Tracts</a>
+      </div>
+
+      <!-- Column 4: Secondary Logo -->
+      <div class="footer-column">
+        <h3>&nbsp;</h3>
+        <img src="cog7theme_gitfolder/ConferenceLogoPackage (3)/English/SecondaryLogo.png" alt="Secondary Logo" class="footer-logo secondary-logo">
+      </div>
+
+      <!-- Column 5: Contact Info -->
+      <div class="footer-column contact-column">
+        <h3>&nbsp;</h3>
+        <p><strong>+1 (303) 452-7973</strong><br>contact@cog7.org</p>
+        <p><span class="footer-label">Mailing Address</span><br>P.O. BOX 33677<br>Denver, CO 80233</p>
+        <p><span class="footer-label">Physical Address</span><br>330 West 152nd Avenue<br>Broomfield, CO 80023</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-left">
+      Website by <a href="#">COG7</a>. Copyright © <span id="year"></span> The General Conference of the Church of God (Seventh Day). All rights reserved.
+    </div>
+    <div class="footer-bottom-right footer-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+    </div>
+  </div>
+</footer>
 
 <script>
   function w3_open() {
@@ -71,6 +136,7 @@
   function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
   }
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
