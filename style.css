@@ -19,12 +19,54 @@ body, html {
 
 .top-bar i {
   margin-right: 6px;
+  color: #00C1C2; /* Set the color to your desired hex */
 }
 
 .top-bar a {
   color: white;
   margin-left: 10px;
   text-decoration: none;
+}
+
+/* Hide the top bar on mobile devices */
+@media (max-width: 768px) {
+  .top-bar {
+    display: none; /* Hide the top bar on mobile */
+  }
+
+  /* Mobile menu icon alignment */
+  .w3-bar-item.w3-button.w3-right {
+    margin-left: 10px; /* Move menu icon to the left */
+  }
+  
+  /* Mobile Sidebar - Match header background color */
+  #mySidebar {
+    background-color: #2f2f2f; /* Ensure the background color matches the header */
+  }
+  
+  /* Show mobile menu on smaller screens */
+  #mySidebar a {
+    color: white;
+  }
+  
+  #mySidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  #mySidebar a:hover {
+    background-color: #444; /* Hover effect for mobile links */
+  }
+  
+  /* Responsive tweaks */
+  .menu-container {
+    display: none; /* Hide main menu on mobile */
+  }
+  
+  .logo-container {
+    margin: 0 auto;
+  }
 }
 
 /* Sticky Main Header */
