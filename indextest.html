@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Church of God</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="contact-info">
+    <i class="fa fa-phone"></i> +1 (303) 452-7973   
+    <i class="fa fa-envelope"></i> contact@cog7.org
+  </div>
+  <div class="social-icons">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+  </div>
+</div>
+
+<!-- Sticky Header with Logo and Menu -->
+<div class="main-header">
+  <div class="w3-bar w3-card" id="myNavbar">
+    <!-- Logo Left -->
+    <a href="#home" class="w3-bar-item w3-button logo-container">
+      <img src="ConferenceLogoPackage (3)/English/Conference Logo_White.png" alt="Church of God Logo">
+    </a>
+    <!-- Menu Right -->
+    <div class="menu-container">
+      <a href="#about" class="w3-bar-item w3-button w3-text-white">About Us <i class="fa fa-caret-down"></i></a>
+      <a href="#news" class="w3-bar-item w3-button w3-text-white">News</a>
+      <a href="#ministries" class="w3-bar-item w3-button w3-text-white">Ministries <i class="fa fa-caret-down"></i></a>
+      <a href="#resources" class="w3-bar-item w3-button w3-text-white">Resources <i class="fa fa-caret-down"></i></a>
+      <a href="#shop" class="w3-bar-item w3-button w3-text-white">Shop</a>
+      <a href="#give" class="w3-bar-item w3-button w3-text-white">Give</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-white w3-round">CONTACT</a>
+    </div>
+    <!-- Mobile icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-text-white" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Mobile Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About Us</a>
+  <a href="#news" onclick="w3_close()" class="w3-bar-item w3-button">News</a>
+  <a href="#ministries" onclick="w3_close()" class="w3-bar-item w3-button">Ministries</a>
+  <a href="#resources" onclick="w3_close()" class="w3-bar-item w3-button">Resources</a>
+  <a href="#shop" onclick="w3_close()" class="w3-bar-item w3-button">Shop</a>
+  <a href="#give" onclick="w3_close()" class="w3-bar-item w3-button">Give</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Hero Section (empty for now) -->
+<header class="bgimg-1 w3-display-container" id="home">
+</header>
+
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+</script>
+
+</body>
+</html>

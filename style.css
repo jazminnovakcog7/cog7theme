@@ -1,0 +1,116 @@
+/* Reset and base styles */
+body, html {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top bar: darker than header, but not black */
+.top-bar {
+  background-color: #262626; /* perfect contrast */
+  color: white;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.top-bar i {
+  margin-right: 6px;
+}
+
+.top-bar a {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* Sticky Main Header */
+#myNavbar {
+  display: flex;
+  align-items: center;
+  background-color: #2f2f2f;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo aligned far left */
+.logo-container {
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+.logo-container img {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.custom-logo {
+  max-height: 50px;
+  max-width: 200px;
+  height: auto;
+  width: auto;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+/* Menu aligned to the right */
+.menu-container {
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-container a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+.menu-container a:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+/* Contact button appearance */
+.menu-container .w3-white {
+  color: black !important;
+  background-color: white !important;
+}
+
+/* Sidebar links on mobile */
+#mySidebar a {
+  color: white;
+}
+
+/* Optional hero section background image */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("your-image.jpg"); /* Replace with your image path */
+  min-height: 100vh;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .logo-container {
+    margin: 0 auto;
+  }
+}
