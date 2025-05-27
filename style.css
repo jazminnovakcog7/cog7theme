@@ -5,7 +5,7 @@ body, html {
   padding: 0;
 }
 
-/* Top bar */
+/* Top Bar */
 .top-bar {
   background-color: #262626;
   color: white;
@@ -111,22 +111,38 @@ body, html {
   padding: 0 20px;
 }
 
+.footer-logo-row {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.footer-logo-main {
+  max-width: 180px;
+}
+
 .footer-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 20px;
 }
 
 .footer-column {
-  flex: 1;
-  min-width: 180px;
+  flex: 1 1 180px;
 }
 
 .footer-column h3 {
   font-size: 16px;
   margin-bottom: 10px;
   margin-top: 0;
+}
+
+.placeholder-heading {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-column a {
@@ -145,8 +161,16 @@ body, html {
   margin-bottom: 10px;
 }
 
+.logo-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
 .secondary-logo {
-  margin-top: 40px;
+  max-height: 130px;
+  width: auto;
+  display: block;
+  margin-top: 0;
 }
 
 .footer-label {
@@ -156,14 +180,20 @@ body, html {
 
 .footer-bottom {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
   border-top: 1px solid #444;
   margin-top: 20px;
-  gap: 20px;
-  text-align: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-left {
+  text-align: left;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer-bottom a {
@@ -171,10 +201,15 @@ body, html {
   text-decoration: none;
 }
 
+.footer-icons {
+  text-align: right;
+  flex: 1;
+}
+
 .footer-icons a {
-  color: white;
+  color: #00C1C2;
   font-size: 20px;
-  margin: 0 8px;
+  margin-left: 12px;
 }
 
 /* Responsive */
@@ -182,32 +217,33 @@ body, html {
   .footer-container {
     flex-wrap: wrap;
   }
-}
-
-@media (max-width: 768px) {
-  .top-bar {
-    display: none;
-  }
-
-  .menu-container {
-    display: none;
-  }
-
-  .logo-container {
-    margin: 0 auto;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
 
   .footer-column {
-    max-width: 100%;
+    flex: 1 1 45%;
+    margin-bottom: 20px;
   }
 
   .footer-bottom {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom-left {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .footer-bottom-right {
+    text-align: center;
+  }
+
+  .footer-icons {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-column {
+    flex: 1 1 100%;
   }
 }
